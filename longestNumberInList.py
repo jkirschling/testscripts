@@ -1,6 +1,12 @@
-numberList = [1,23,4,5,7,39,22,33,60,207,1024,6,9,4096]
-largestNumber = numberList[0]
-for item in numberList:
-    if item > largestNumber:
-        largestNumber = item
-print(f"The largest number is: {largestNumber}!")
+#Largest Number
+numberList = [1,23,4,5,7,39,22,33,60,4,207,1024,6,9,9,9,7,7,7]
+numberList.sort()
+print(f"The largest number is: {numberList[-1]}!")
+
+#Remove Duplicates
+print(numberList)
+uniques = []
+for number in numberList:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
